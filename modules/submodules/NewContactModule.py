@@ -51,7 +51,7 @@ class NewContactModule(Frame):
         try:
             if((len(self.addressEntry.get()) == 0) or (len(self.nameEntry.get()) == 0) or (len(self.phoneEntry.get()) == 0) or (len(self.emailEntry.get()) == 0)):
                 kite = Tk()
-                chi = Ewin(master=kite, warnMsg="Some fields(s) might be empty")
+                chi = Ewin(master=kite, warnMsg="Some field(s) might be empty")
                 kite.after(2000, lambda: kite.destroy())
                 kite.mainloop()
 
